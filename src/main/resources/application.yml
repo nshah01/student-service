@@ -1,6 +1,6 @@
 spring:
   application:
-    name: student-example
+    name: student-service
   data:
     mongodb:
       host:  172.17.0.7
