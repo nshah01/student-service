@@ -22,5 +22,11 @@ public class StudentController {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + student);
 		return student;	
 	}	
+	
+	@RequestMapping(value = "/create" ,method = RequestMethod.POST)
+	public Student createPerson(@RequestBody Student student) {
+		return studentRepo.save(student);
+		
+	}
 
 }
